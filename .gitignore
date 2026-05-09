@@ -1,0 +1,10 @@
+.vs/
+
+# Backend
+backend/HrmSystem.API/appsettings.json
+backend/HrmSystem.API/bin/
+backend/HrmSystem.API/obj/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
