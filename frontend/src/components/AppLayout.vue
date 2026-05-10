@@ -34,7 +34,9 @@
     <el-container>
       <!-- Header -->
       <el-header style="background:white; display:flex; align-items:center; justify-content:space-between; box-shadow:0 1px 4px rgba(0,0,0,0.1)">
+        <NotificationBell />
         <span style="font-size:16px">{{ $route.name }}</span>
+        
         <el-dropdown @command="handleCommand">
           <span style="cursor:pointer">
             👤 {{ user?.fullName }} <el-icon><ArrowDown /></el-icon>
@@ -59,7 +61,7 @@
 import { computed } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
-
+import NotificationBell from './NotificationBell.vue'
 const store = useStore()
 const router = useRouter()
 const user = computed(() => store.getters.currentUser)

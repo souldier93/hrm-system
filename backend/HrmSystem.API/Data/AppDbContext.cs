@@ -13,4 +13,6 @@ public class AppDbContext : DbContext
     public DbSet<Account> Accounts { get; set; }
     public DbSet<Attendance> Attendances { get; set; }
     public DbSet<Salary> Salaries { get; set; }
+
+    public DbSet<Notification> Notifications { get; set; }
 }

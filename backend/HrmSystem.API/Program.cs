@@ -52,7 +52,8 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<AttendanceService>();
 builder.Services.AddScoped<SalaryService>();
-
+//Notification
+builder.Services.AddScoped<NotificationService>(); // ← thêm dòng này
 // SignalR
 builder.Services.AddSignalR();
 
